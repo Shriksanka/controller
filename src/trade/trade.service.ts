@@ -8,7 +8,7 @@ puppeteerExtra.use(StealthPlugin());
 export class TradeService {
   private browser: any;
   private page: any;
-  private readonly AMOUNT = 12;
+  private readonly AMOUNT = 200;
   private initialized = false;
 
   async init() {
