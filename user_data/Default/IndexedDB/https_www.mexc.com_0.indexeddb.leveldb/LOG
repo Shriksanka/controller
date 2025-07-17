@@ -1,43 +1,17 @@
-2025/07/17-00:22:37.360 5268 Reusing MANIFEST C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\IndexedDB\https_www.mexc.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/07/17-00:22:37.361 5268 Recovering log #39
-2025/07/17-00:22:37.368 5268 Reusing old log C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\IndexedDB\https_www.mexc.com_0.indexeddb.leveldb/000039.log 
-2025/07/17-00:22:39.345 5268 Level-0 table #44: started
-2025/07/17-00:22:39.350 5268 Level-0 table #44: 215644 bytes OK
-2025/07/17-00:22:39.351 5268 Delete type=0 #39
-2025/07/17-00:22:39.351 5268 Manual compaction at level-0 from '\x00\x12\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x13\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/07/17-00:22:40.173 12314 Compacting 1@1 + 1@2 files
-2025/07/17-00:22:40.177 12314 Generated table #45@1: 94 keys, 7350 bytes
-2025/07/17-00:22:40.177 12314 Compacted 1@1 + 1@2 files => 7350 bytes
-2025/07/17-00:22:40.178 12314 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/07/17-00:22:40.178 12314 Delete type=2 #41
-2025/07/17-00:22:40.178 12314 Delete type=2 #44
-2025/07/17-00:22:54.700 12314 Level-0 table #47: started
-2025/07/17-00:22:54.704 12314 Level-0 table #47: 116337 bytes OK
-2025/07/17-00:22:54.704 12314 Delete type=0 #43
-2025/07/17-00:22:54.705 5268 Manual compaction at level-0 from '\x00\x13\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x14\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/07/17-00:22:56.073 5268 Compacting 1@1 + 1@2 files
-2025/07/17-00:22:56.078 5268 Generated table #48@1: 91 keys, 6579 bytes
-2025/07/17-00:22:56.078 5268 Compacted 1@1 + 1@2 files => 6579 bytes
-2025/07/17-00:22:56.079 5268 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/07/17-00:22:56.082 5268 Delete type=2 #45
-2025/07/17-00:22:56.082 5268 Delete type=2 #47
-2025/07/17-00:24:01.233 12314 Level-0 table #50: started
-2025/07/17-00:24:01.238 12314 Level-0 table #50: 137361 bytes OK
-2025/07/17-00:24:01.239 12314 Delete type=0 #46
-2025/07/17-00:24:01.239 5268 Manual compaction at level-0 from '\x00\x14\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x15\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/07/17-00:24:02.137 12314 Compacting 1@1 + 1@2 files
-2025/07/17-00:24:02.140 12314 Generated table #51@1: 106 keys, 8206 bytes
-2025/07/17-00:24:02.140 12314 Compacted 1@1 + 1@2 files => 8206 bytes
-2025/07/17-00:24:02.140 12314 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/07/17-00:24:02.141 12314 Delete type=2 #48
-2025/07/17-00:24:02.141 12314 Delete type=2 #50
-2025/07/17-00:24:17.478 12314 Level-0 table #53: started
-2025/07/17-00:24:17.486 12314 Level-0 table #53: 118757 bytes OK
-2025/07/17-00:24:17.486 12314 Delete type=0 #49
-2025/07/17-00:24:17.487 5268 Manual compaction at level-0 from '\x00\x15\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x16\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/07/17-00:24:18.371 12314 Compacting 1@1 + 1@2 files
-2025/07/17-00:24:18.374 12314 Generated table #54@1: 95 keys, 7146 bytes
-2025/07/17-00:24:18.374 12314 Compacted 1@1 + 1@2 files => 7146 bytes
-2025/07/17-00:24:18.374 12314 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/07/17-00:24:18.374 12314 Delete type=2 #51
-2025/07/17-00:24:18.374 12314 Delete type=2 #53
+2025/07/17-09:32:39.732 5a1c Reusing MANIFEST C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\IndexedDB\https_www.mexc.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/07/17-09:32:39.732 5a1c Recovering log #3
+2025/07/17-09:32:39.737 5a1c Reusing old log C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\IndexedDB\https_www.mexc.com_0.indexeddb.leveldb/000003.log 
+2025/07/17-09:35:03.925 1a254 Level-0 table #5: started
+2025/07/17-09:35:03.936 1a254 Level-0 table #5: 406342 bytes OK
+2025/07/17-09:35:03.936 1a254 Delete type=0 #3
+2025/07/17-09:35:03.937 56a0 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/07/17-09:35:07.504 1a254 Level-0 table #7: started
+2025/07/17-09:35:07.508 1a254 Level-0 table #7: 17418 bytes OK
+2025/07/17-09:35:07.508 1a254 Delete type=0 #4
+2025/07/17-09:35:07.509 56a0 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/07/17-09:35:08.100 56a0 Compacting 1@1 + 1@2 files
+2025/07/17-09:35:08.106 56a0 Generated table #8@1: 102 keys, 7851 bytes
+2025/07/17-09:35:08.106 56a0 Compacted 1@1 + 1@2 files => 7851 bytes
+2025/07/17-09:35:08.106 56a0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/07/17-09:35:08.106 56a0 Delete type=2 #5
+2025/07/17-09:35:08.107 56a0 Delete type=2 #7

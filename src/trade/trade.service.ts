@@ -16,7 +16,7 @@ export class TradeService {
 
     this.browser = await puppeteerExtra.launch({
       userDataDir: './user_data',
-      headless: true,
+      headless: false,
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
 

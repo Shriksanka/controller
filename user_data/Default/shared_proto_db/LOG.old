@@ -1,3 +1,2 @@
-2025/07/17-00:19:39.858 bdc8 Reusing MANIFEST C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\shared_proto_db/MANIFEST-000001
-2025/07/17-00:19:39.859 bdc8 Recovering log #3
-2025/07/17-00:19:39.859 bdc8 Reusing old log C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\shared_proto_db/000003.log 
+2025/07/17-09:26:14.228 1afa4 Creating DB C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\shared_proto_db since it was missing.
+2025/07/17-09:26:14.232 1afa4 Reusing MANIFEST C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\shared_proto_db/MANIFEST-000001

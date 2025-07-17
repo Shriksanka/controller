@@ -1,3 +1,2 @@
-2025/07/17-00:19:39.695 bdc8 Reusing MANIFEST C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\Sync Data\LevelDB/MANIFEST-000001
-2025/07/17-00:19:39.698 bdc8 Recovering log #3
-2025/07/17-00:19:39.698 bdc8 Reusing old log C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\Sync Data\LevelDB/000003.log 
+2025/07/17-09:26:14.058 1a0d4 Creating DB C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\Sync Data\LevelDB since it was missing.
+2025/07/17-09:26:14.078 1a0d4 Reusing MANIFEST C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\Sync Data\LevelDB/MANIFEST-000001

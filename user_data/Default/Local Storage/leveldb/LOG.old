@@ -1,3 +1,5 @@
-2025/07/17-00:19:39.741 1a688 Reusing MANIFEST C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\Local Storage\leveldb/MANIFEST-000001
-2025/07/17-00:19:39.745 1a688 Recovering log #16
-2025/07/17-00:19:39.748 1a688 Reusing old log C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\Local Storage\leveldb/000016.log 
+2025/07/17-09:26:14.101 10404 Creating DB C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\Local Storage\leveldb since it was missing.
+2025/07/17-09:26:14.116 10404 Reusing MANIFEST C:\Users\meepo\OneDrive\Desktop\mexc_positions_trader\mexc-trader\user_data\Default\Local Storage\leveldb/MANIFEST-000001
+2025/07/17-09:27:14.132 117b0 Level-0 table #5: started
+2025/07/17-09:27:14.136 117b0 Level-0 table #5: 44681 bytes OK
+2025/07/17-09:27:14.138 117b0 Delete type=0 #3
