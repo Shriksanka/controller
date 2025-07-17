@@ -58,6 +58,10 @@ export class TradeService {
     price: number,
     reason: string,
   ) {
+    console.log(
+      `[TRADE] Entering ${direction.toUpperCase()} position on ${symbol} at ${price} due to "${reason}"`,
+    );
+
     await this.init();
     await this.gotoSymbol(symbol);
 
@@ -65,6 +69,8 @@ export class TradeService {
 
     const inputSelector = '.extend-wrapper input.ant-input';
     await this.page.waitForSelector(inputSelector);
+    console.log(`[TRADE] Filling amount: ${this.AMOUNT}`);
+
     await this.page.click(inputSelector, { clickCount: 3 });
     await this.page.type(inputSelector, this.AMOUNT.toString());
 
@@ -73,6 +79,8 @@ export class TradeService {
         ? 'button[data-testid="contract-trade-open-long-btn"]'
         : 'button[data-testid="contract-trade-open-short-btn"]';
 
+    console.log(`[TRADE] Clicking open ${direction} button`);
+
     await this.page.waitForSelector(openBtnSelector);
     await this.page.click(openBtnSelector);
 
@@ -80,6 +88,8 @@ export class TradeService {
       direction === 'long'
         ? 'button.ForcedReminder_btnBuy__uZYuh'
         : 'button.ForcedReminder_btnSell__sTbsO';
+
+    console.log(`[TRADE] Clicking confirm button`);
 
     await this.page.waitForSelector(confirmSelector);
     await this.page.click(confirmSelector);
@@ -106,6 +116,10 @@ export class TradeService {
     }
 
     try {
+      console.log(
+        `[TRADE] Exiting ${direction.toUpperCase()} position on ${symbol} at ${price} due to "${reason}"`,
+      );
+
       await this.gotoSymbol(symbol);
       await this.closeModalsIfAny();
 

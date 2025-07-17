@@ -15,6 +15,7 @@ export class PositionsController {
       reason: string;
     },
   ) {
+    console.log(`[ENTER] Received enterPosition request:`, body);
     return this.positionsService.enterPosition(body);
   }
 
@@ -28,6 +29,7 @@ export class PositionsController {
       reason: string;
     },
   ) {
+    console.log(`[EXIT] Received exitPosition request:`, body);
     return this.positionsService.exitPosition(body);
   }
 }

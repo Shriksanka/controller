@@ -16,8 +16,8 @@ export class PositionsService {
   ) {}
 
   private readonly DIRECTION_IDS = {
-    long: '08fa26fc-0708-4b28-a283-6db7ee9e5211',
-    short: 'fa84bde5-3bd1-4b8a-b805-7c4b05ec4606',
+    long: '710381de-15d8-4b82-ac56-88e220c9e2d9',
+    short: '2816b826-c95e-4430-8ccd-27816751ced5',
   };
 
   async enterPosition({
@@ -31,15 +31,29 @@ export class PositionsService {
     price: number;
     reason: string;
   }) {
+    console.log(
+      `[ENTER] Processing entry for ${symbolId} as ${direction}, price=${price}, reason=${reason}`,
+    );
+
     const directionId = this.DIRECTION_IDS[direction];
 
     const existing = await this.positionRepo.findOne({
       where: { symbolId, directionId },
     });
-    if (existing) return { status: 'already_opened' };
+    if (existing) {
+      console.log(
+        `[ENTER] Position already opened for ${symbolId} as ${direction}`,
+      );
+
+      return { status: 'already_opened' };
+    }
 
     const symbol = await this.symbolRepo.findOneBy({ id: symbolId });
-    if (!symbol) throw new NotFoundException('Symbol not found');
+    if (!symbol) {
+      console.warn(`[ENTER] Symbol not found: ${symbolId}`);
+
+      throw new NotFoundException('Symbol not found');
+    }
 
     const result = await this.tradeService.enterPosition(
       symbol.name,
@@ -47,6 +61,7 @@ export class PositionsService {
       price,
       reason,
     );
+    console.log(`[ENTER] TradeService responded:`, result);
 
     const position = this.positionRepo.create({
       symbolId,
@@ -55,6 +70,7 @@ export class PositionsService {
       amount: 200,
     });
 
+    console.log(`[ENTER] Position saved in DB for ${symbolId} (${direction})`);
     await this.positionRepo.save(position);
 
     return { status: 'opened', result };
@@ -71,6 +87,10 @@ export class PositionsService {
     price: number;
     reason: string;
   }) {
+    console.log(
+      `[EXIT] Processing exit for ${symbolId} as ${direction}, price=${price}, reason=${reason}`,
+    );
+
     const directionId = this.DIRECTION_IDS[direction];
 
     const position = await this.positionRepo.findOne({
@@ -78,7 +98,13 @@ export class PositionsService {
       relations: ['symbol'],
     });
 
-    if (!position) return { status: 'no_active_position' };
+    if (!position) {
+      console.log(
+        `[EXIT] No active position found for ${symbolId} as ${direction}`,
+      );
+
+      return { status: 'no_active_position' };
+    }
 
     const result = await this.tradeService.exitPosition(
       position.symbol.name,
@@ -86,8 +112,12 @@ export class PositionsService {
       price,
       reason,
     );
+    console.log(`[EXIT] TradeService responded:`, result);
 
     await this.positionRepo.remove(position);
+    console.log(
+      `[EXIT] Position removed from DB for ${symbolId} (${direction})`,
+    );
 
     return { status: 'closed', result };
   }
